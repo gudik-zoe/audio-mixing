@@ -28,7 +28,7 @@ app.post("/anyToMp3" , (req, res)=>{
         console.log("file uploaded successfully "); 
     });
 
-    //converting any to mp3 
+    //converting any audio file  to mp3 
 
     ffmpeg("tmp/" + req.files.mp4.name)
     .toFormat("mp3")
